@@ -6,7 +6,32 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"); */
+
+@font-face {
+  font-family: "Firwaen"; /* Choose a unique name for your font */
+  src: url("/FIRWAENpersonaluse.otf") format("woff2"),
+    /* Modern Browsers */ url("/FIRWAENpersonaluse.otf") format("woff");
+
+  /* Older Browsers */ /* You can add more file formats here if needed (e.g., .ttf, .eot) */
+}
+@font-face {
+  font-family: "Gugi";
+  src: url("/Gugi-Regular.ttf") format("woff2"),
+    url("/Gugi-Regular.ttf") format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Gugi&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Firwaen", sans-serif;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -29,6 +54,11 @@ body {
  */
 main {
   display: block;
+}
+
+p,
+a {
+  font-family: "Gugi", sans-serif;
 }
 
 /**
@@ -59,7 +89,6 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: "Nostalgic Remain", sans-serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -102,7 +131,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Firwaen", sans-serif;
+  /* font-family: "Nostalgic Remain", sans-serif; */
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -155,7 +185,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Firwaen", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -346,7 +376,7 @@ body {
   color: #ecffe1;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: "Nostalgic Remain", sans-serif;
+
   background-color: #210e3f;
 }
 
@@ -360,7 +390,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Firwaen", sans-serif;
   color: #ecffe1;
   line-height: 1.2;
   font-weight: 700;
@@ -1445,7 +1475,7 @@ ol {
 
 .nav-link {
   color: #fff;
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Gugi", sans-serif;
 }
 @media (min-width: 1200px) {
   .nav-link {
@@ -1608,7 +1638,7 @@ ol {
   height: 18px;
   line-height: 18px;
   font-size: 14px;
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Firwaen", sans-serif;
   border-radius: 50%;
   color: #abff87;
   top: -8px;
@@ -2223,7 +2253,7 @@ ol {
   font-size: 1rem;
   border-radius: 4px;
   text-decoration: none;
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Gugi", sans-serif;
   color: #191919;
   padding: 0 1.7rem;
   line-height: 50px;
@@ -2717,7 +2747,7 @@ ol {
   font-size: calc(1.275rem + 0.2571428571vw);
   background-color: transparent;
   color: #191919;
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Gugi", sans-serif;
   font-weight: 500;
   padding: 1.5rem 1rem;
   border: none;
@@ -3083,7 +3113,7 @@ ol {
   color: #abff87;
   content: "" !important;
   font-size: 36px;
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Gugi", sans-serif;
 }
 .post-item-2 .post-inner .post-content .qute-content blockquote::after {
   width: 40px;
@@ -3094,7 +3124,7 @@ ol {
   color: #abff87;
   content: "" !important;
   font-size: 36px;
-  font-family: "Nostalgic Remain", sans-serif;
+  font-family: "Gugi", sans-serif;
 }
 .post-item-2 .post-inner .post-content .qute-content blockquote a {
   -webkit-transition: all 0.3s ease;
@@ -3641,4 +3671,10 @@ section.about {
   .token_section {
     display: block;
   }
+}
+
+p,
+a,
+button {
+  font-family: "Gugi", sans-serif;
 }
